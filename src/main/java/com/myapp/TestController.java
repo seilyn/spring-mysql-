@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class TestController {
 	@Autowired
 	private StarRepository starRepository;
-	@GetMapping("/")
-	public String home() {
-		return "Success";
-	}
+//	@GetMapping("/")
+//	public String home() {
+//		return "Success";
+//	}
 	
 	@GetMapping("/unit")
 	public @ResponseBody Iterable<unit> getAllUnits() {

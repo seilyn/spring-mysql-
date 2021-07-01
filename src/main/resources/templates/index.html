@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title> StarCraft </title>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>ID</th>
+				<th>Race</th>
+				<th>Name</th>
+				<th>Attack</th>
+				<th>Defense</th>
+			</tr>
+			<tr th:each="units: ${unit}">
+				<td th:text = "${units.id}"> data </td>
+				<td th:text = "${units.race}"> data </td>
+				<td th:text = "${units.name}"> data </td>
+				<td th:text = "${units.ATK}"> data </td>
+				<td th:text = "${units.DEF}"> data </td>
+			</tr>
+		</table>
+	</body>
+</html>
